@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  year: MyString
+  month: MyString
+  strike: 1
+  bid: 1.5
+  ask: 1.5
+
+two:
+  year: MyString
+  month: MyString
+  strike: 1
+  bid: 1.5
+  ask: 1.5

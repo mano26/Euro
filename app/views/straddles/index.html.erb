@@ -1,0 +1,31 @@
+<h1>Listing straddles</h1>
+
+<table>
+  <tr>
+    <th>Year</th>
+    <th>Month</th>
+    <th>Strike</th>
+    <th>Bid</th>
+    <th>Ask</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @straddles.each do |straddle| %>
+  <tr>
+    <td><%= straddle.year %></td>
+    <td><%= straddle.month %></td>
+    <td><%= straddle.strike %></td>
+    <td><%= straddle.bid %></td>
+    <td><%= straddle.ask %></td>
+    <td><%= link_to 'Show', straddle %></td>
+    <td><%= link_to 'Edit', edit_straddle_path(straddle) %></td>
+    <td><%= link_to 'Destroy', straddle, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Straddle', new_straddle_path %>

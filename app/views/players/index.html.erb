@@ -1,0 +1,39 @@
+<h1>Listing players</h1>
+
+<table>
+  <tr>
+    <th>Year</th>
+    <th>Month</th>
+    <th>Strike</th>
+    <th>Strategy</th>
+    <th>Price</th>
+    <th>Quantity</th>
+    <th>Direction</th>
+    <th>House</th>
+    <th>Genaric</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @players.each do |player| %>
+  <tr>
+    <td><%= player.year %></td>
+    <td><%= player.month %></td>
+    <td><%= player.strike %></td>
+    <td><%= player.strategy %></td>
+    <td><%= player.price %></td>
+    <td><%= player.quantity %></td>
+    <td><%= player.direction %></td>
+    <td><%= player.house %></td>
+    <td><%= player.genaric %></td>
+    <td><%= link_to 'Show', player %></td>
+    <td><%= link_to 'Edit', edit_player_path(player) %></td>
+    <td><%= link_to 'Destroy', player, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Player', new_player_path %>

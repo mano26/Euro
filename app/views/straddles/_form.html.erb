@@ -1,0 +1,37 @@
+<%= form_for(@straddle) do |f| %>
+  <% if @straddle.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@straddle.errors.count, "error") %> prohibited this straddle from being saved:</h2>
+
+      <ul>
+      <% @straddle.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :year %><br />
+    <%= f.text_field :year %>
+  </div>
+  <div class="field">
+    <%= f.label :month %><br />
+    <%= f.text_field :month %>
+  </div>
+  <div class="field">
+    <%= f.label :strike %><br />
+    <%= f.number_field :strike %>
+  </div>
+  <div class="field">
+    <%= f.label :bid %><br />
+    <%= f.text_field :bid %>
+  </div>
+  <div class="field">
+    <%= f.label :ask %><br />
+    <%= f.text_field :ask %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

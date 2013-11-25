@@ -1,0 +1,27 @@
+<h1>Listing players_lists</h1>
+
+<table>
+  <tr>
+    <th>Date</th>
+    <th>User</th>
+    <th>Group name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @players_lists.each do |players_list| %>
+  <tr>
+    <td><%= players_list.date %></td>
+    <td><%= players_list.user_id %></td>
+    <td><%= players_list.group_name %></td>
+    <td><%= link_to 'Show', players_list %></td>
+    <td><%= link_to 'Edit', edit_players_list_path(players_list) %></td>
+    <td><%= link_to 'Destroy', players_list, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Players list', new_players_list_path %>

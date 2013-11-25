@@ -1,0 +1,53 @@
+<%= form_for(@player) do |f| %>
+  <% if @player.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@player.errors.count, "error") %> prohibited this player from being saved:</h2>
+
+      <ul>
+      <% @player.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :year %><br />
+    <%= f.text_field :year %>
+  </div>
+  <div class="field">
+    <%= f.label :month %><br />
+    <%= f.text_field :month %>
+  </div>
+  <div class="field">
+    <%= f.label :strike %><br />
+    <%= f.number_field :strike %>
+  </div>
+  <div class="field">
+    <%= f.label :strategy %><br />
+    <%= f.text_field :strategy %>
+  </div>
+  <div class="field">
+    <%= f.label :price %><br />
+    <%= f.text_field :price %>
+  </div>
+  <div class="field">
+    <%= f.label :quantity %><br />
+    <%= f.number_field :quantity %>
+  </div>
+  <div class="field">
+    <%= f.label :direction %><br />
+    <%= f.text_field :direction %>
+  </div>
+  <div class="field">
+    <%= f.label :house %><br />
+    <%= f.number_field :house %>
+  </div>
+  <div class="field">
+    <%= f.label :genaric %><br />
+    <%= f.text_area :genaric %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

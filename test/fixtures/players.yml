@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  year: MyString
+  month: MyString
+  strike: 1
+  strategy: MyString
+  price: MyString
+  quantity: 1
+  direction: MyString
+  house: 1
+  genaric: MyText
+
+two:
+  year: MyString
+  month: MyString
+  strike: 1
+  strategy: MyString
+  price: MyString
+  quantity: 1
+  direction: MyString
+  house: 1
+  genaric: MyText

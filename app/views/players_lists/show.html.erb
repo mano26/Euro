@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Date:</b>
+  <%= @players_list.date %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @players_list.user_id %>
+</p>
+
+<p>
+  <b>Group name:</b>
+  <%= @players_list.group_name %>
+</p>
+
+
+<%= link_to 'Edit', edit_players_list_path(@players_list) %> |
+<%= link_to 'Back', players_lists_path %>

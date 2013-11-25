@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Year:</b>
+  <%= @straddle.year %>
+</p>
+
+<p>
+  <b>Month:</b>
+  <%= @straddle.month %>
+</p>
+
+<p>
+  <b>Strike:</b>
+  <%= @straddle.strike %>
+</p>
+
+<p>
+  <b>Bid:</b>
+  <%= @straddle.bid %>
+</p>
+
+<p>
+  <b>Ask:</b>
+  <%= @straddle.ask %>
+</p>
+
+
+<%= link_to 'Edit', edit_straddle_path(@straddle) %> |
+<%= link_to 'Back', straddles_path %>

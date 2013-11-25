@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Year:</b>
+  <%= @player.year %>
+</p>
+
+<p>
+  <b>Month:</b>
+  <%= @player.month %>
+</p>
+
+<p>
+  <b>Strike:</b>
+  <%= @player.strike %>
+</p>
+
+<p>
+  <b>Strategy:</b>
+  <%= @player.strategy %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%= @player.price %>
+</p>
+
+<p>
+  <b>Quantity:</b>
+  <%= @player.quantity %>
+</p>
+
+<p>
+  <b>Direction:</b>
+  <%= @player.direction %>
+</p>
+
+<p>
+  <b>House:</b>
+  <%= @player.house %>
+</p>
+
+<p>
+  <b>Genaric:</b>
+  <%= @player.genaric %>
+</p>
+
+
+<%= link_to 'Edit', edit_player_path(@player) %> |
+<%= link_to 'Back', players_path %>
